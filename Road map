@@ -1,0 +1,861 @@
+Got it — here’s a **clear step-by-step Linux roadmap (beginner → job-ready)** you can follow. I’ll keep it practical and structured so you can actually learn in ~30–45 days.
+
+---
+
+# 🐧 Linux Roadmap (Step by Step)
+
+## 🔰 Phase 1: Basics (Days 1–5)
+
+**Goal:** Get comfortable using Linux
+
+### ✅ Install Linux
+
+* Use Ubuntu (easy for beginners)
+* Or install in VirtualBox / dual boot
+
+### ✅ Learn Basic Commands
+
+Practice daily:
+
+```
+pwd       # current directory
+ls        # list files
+cd        # change directory
+mkdir     # create folder
+rm        # delete
+cp        # copy
+mv        # move/rename
+```
+
+### ✅ File Viewing
+
+```
+cat file.txt
+less file.txt
+head file.txt
+tail file.txt
+```
+
+👉 Practice: Navigate folders, create/delete files
+
+---
+
+## ⚙️ Phase 2: Intermediate Commands (Days 6–12)
+
+**Goal:** Work like a real user
+
+### ✅ Permissions & Ownership
+
+```
+chmod 755 file.sh
+chown user:group file
+```
+
+### ✅ Process Management
+
+```
+ps aux
+top
+kill -9 PID
+```
+
+### ✅ Disk & Memory
+
+```
+df -h
+du -sh *
+free -m
+```
+
+### ✅ Searching
+
+```
+find / -name file.txt
+grep "word" file.txt
+```
+
+---
+
+## 🧠 Phase 3: Shell Scripting (Days 13–18)
+
+**Goal:** Automate tasks
+
+### ✅ Basics
+
+Create a script:
+
+```bash
+#!/bin/bash
+echo "Hello World"
+```
+
+### ✅ Learn:
+
+* Variables
+* if-else
+* loops (for, while)
+
+Example:
+
+```bash
+for i in {1..5}
+do
+  echo $i
+done
+```
+
+👉 Practice: Script to backup files or monitor disk
+
+---
+
+## 🌐 Phase 4: Networking (Days 19–23)
+
+**Goal:** Understand servers
+
+### ✅ Commands
+
+```
+ping google.com
+ifconfig / ip a
+netstat -tulnp
+curl
+wget
+```
+
+### ✅ Learn:
+
+* IP, DNS, ports
+* SSH login:
+
+```
+ssh user@server-ip
+```
+
+---
+
+## 🧱 Phase 5: System Administration (Days 24–30)
+
+**Goal:** Think like DevOps engineer
+
+### ✅ User Management
+
+```
+useradd username
+passwd username
+```
+
+### ✅ Package Management
+
+In Ubuntu:
+
+```
+apt update
+apt install nginx
+```
+
+👉 Install:
+
+* Nginx
+* Apache HTTP Server
+
+### ✅ Services
+
+```
+systemctl start nginx
+systemctl status nginx
+```
+
+---
+
+## 🚀 Phase 6: Advanced + DevOps Ready (Days 31–45)
+
+**Goal:** Job-ready skills
+
+### ✅ Learn:
+
+* Cron Jobs
+
+```
+crontab -e
+```
+
+* Logs
+
+```
+/var/log/syslog
+journalctl
+```
+
+* Environment variables
+
+```
+export NAME=value
+```
+
+---
+
+## 🔥 Bonus (Highly Important for Jobs)
+
+After Linux basics, start:
+
+* Git
+* Docker
+* Kubernetes
+* Basic Cloud (AWS)
+
+---
+
+# 🧪 Daily Practice Plan (Simple)
+
+Spend 1–2 hours daily:
+
+* 30 min → learn commands
+* 30 min → practice
+* 30 min → mini project
+
+---
+
+# 💡 Mini Projects (Very Important)
+
+Try these:
+
+* Create backup script
+* Setup web server (Nginx)
+* Monitor CPU usage script
+* Create user management script
+
+---
+
+# 🎯 Final Goal
+
+By the end, you should be able to:
+
+* Work confidently in terminal
+* Manage servers
+* Debug issues
+* Automate tasks
+
+---
+Nice — here’s a **practical 30-day Linux timetable** you can follow daily (1–2 hrs/day). This is structured like real DevOps preparation 👇
+
+---
+
+# 🐧 30-Day Linux Daily Timetable
+
+## 🔰 Week 1: Linux Basics (Days 1–7)
+
+**Goal:** Become comfortable using terminal
+
+### 📅 Day 1
+
+* Install Ubuntu (VM or dual boot)
+* Learn:
+
+  * pwd, ls, cd
+* Task: Navigate directories
+
+### 📅 Day 2
+
+* Commands:
+
+  * mkdir, rmdir, touch
+* Task: Create folder structure (project/test/logs)
+
+### 📅 Day 3
+
+* File operations:
+
+  * cp, mv, rm
+* Task: Copy & move files
+
+### 📅 Day 4
+
+* File viewing:
+
+  * cat, less, head, tail
+* Task: Read log files
+
+### 📅 Day 5
+
+* Wildcards & basic shortcuts
+* Task: Use `*` to filter files
+
+### 📅 Day 6
+
+* Learn:
+
+  * echo, history, clear
+* Task: Practice command history
+
+### 📅 Day 7
+
+* 🔁 Revision + Practice
+* Mini Project: Create & organize files like a real system
+
+---
+
+## ⚙️ Week 2: Intermediate Linux (Days 8–14)
+
+**Goal:** Work like a system user
+
+### 📅 Day 8
+
+* Permissions:
+
+  * chmod
+* Task: Change file permissions
+
+### 📅 Day 9
+
+* Ownership:
+
+  * chown
+* Task: Assign user/group
+
+### 📅 Day 10
+
+* Processes:
+
+  * ps, top, kill
+* Task: Kill a running process
+
+### 📅 Day 11
+
+* Disk usage:
+
+  * df, du
+* Task: Check storage
+
+### 📅 Day 12
+
+* Search:
+
+  * find, grep
+* Task: Find files & words
+
+### 📅 Day 13
+
+* Compression:
+
+  * tar, zip, unzip
+* Task: Archive files
+
+### 📅 Day 14
+
+* 🔁 Revision + Practice
+* Mini Project: Backup files using tar
+
+---
+
+## 🧠 Week 3: Shell Scripting (Days 15–21)
+
+**Goal:** Automate tasks
+
+### 📅 Day 15
+
+* Intro to scripting
+* Create first script
+
+### 📅 Day 16
+
+* Variables & input
+* Task: Script with user input
+
+### 📅 Day 17
+
+* Conditions (if-else)
+* Task: Check if file exists
+
+### 📅 Day 18
+
+* Loops (for, while)
+* Task: Print numbers/files
+
+### 📅 Day 19
+
+* Functions in scripts
+* Task: Create reusable script
+
+### 📅 Day 20
+
+* Real use cases
+* Task: Backup script
+
+### 📅 Day 21
+
+* 🔁 Revision + Practice
+* Mini Project: Disk usage alert script
+
+---
+
+## 🌐 Week 4: Networking + System Admin (Days 22–30)
+
+**Goal:** Become job-ready
+
+### 📅 Day 22
+
+* Networking basics:
+
+  * ping, curl
+* Task: Test connectivity
+
+### 📅 Day 23
+
+* IP & interfaces:
+
+  * ip a, netstat
+* Task: Check IP
+
+### 📅 Day 24
+
+* SSH:
+
+```bash
+ssh user@ip
+```
+
+* Task: Connect to remote server
+
+### 📅 Day 25
+
+* Users:
+
+  * useradd, passwd
+* Task: Create users
+
+### 📅 Day 26
+
+* Package management:
+
+```bash
+apt update
+apt install nginx
+```
+
+* Install Nginx
+
+### 📅 Day 27
+
+* Services:
+
+  * systemctl start/status
+* Task: Manage nginx
+
+### 📅 Day 28
+
+* Logs:
+
+  * journalctl, /var/log
+* Task: Check logs
+
+### 📅 Day 29
+
+* Cron jobs:
+
+```bash
+crontab -e
+```
+
+* Task: Schedule script
+
+### 📅 Day 30 🎯
+
+* Final Project:
+
+  * Setup server
+  * Create users
+  * Deploy nginx
+  * Write backup script
+
+---
+
+# 🔥 After 30 Days (Next Step)
+
+Start learning:
+
+* Git
+* Docker
+* Kubernetes
+
+---
+
+Perfect — this is exactly how you’ll **master Linux fast**. Below are **daily practice commands WITH answers** (hands-on style). Try yourself first, then check answers 👇
+
+---
+
+# 🐧 Daily Linux Practice (Commands + Answers)
+
+## 🔰 Day 1: Navigation
+
+### ❓ Tasks
+
+1. Print current directory
+2. List files
+3. Go to `/home` directory
+
+### ✅ Answers
+
+```bash
+pwd
+ls
+cd /home
+```
+
+---
+
+## 📁 Day 2: File & Directory Creation
+
+### ❓ Tasks
+
+1. Create folder `devops`
+2. Create file `test.txt`
+3. Create multiple folders `a b c`
+
+### ✅ Answers
+
+```bash
+mkdir devops
+touch test.txt
+mkdir a b c
+```
+
+---
+
+## 📄 Day 3: File Operations
+
+### ❓ Tasks
+
+1. Copy `test.txt` to `devops`
+2. Move file to another name
+3. Delete file
+
+### ✅ Answers
+
+```bash
+cp test.txt devops/
+mv test.txt new.txt
+rm new.txt
+```
+
+---
+
+## 👀 Day 4: View Files
+
+### ❓ Tasks
+
+1. Display file content
+2. View first 5 lines
+3. View last 5 lines
+
+### ✅ Answers
+
+```bash
+cat test.txt
+head -5 test.txt
+tail -5 test.txt
+```
+
+---
+
+## ⭐ Day 5: Wildcards
+
+### ❓ Tasks
+
+1. List all `.txt` files
+2. Delete all `.log` files
+
+### ✅ Answers
+
+```bash
+ls *.txt
+rm *.log
+```
+
+---
+
+## ⚙️ Day 6: Basic Commands
+
+### ❓ Tasks
+
+1. Print text "Hello Linux"
+2. Show command history
+3. Clear terminal
+
+### ✅ Answers
+
+```bash
+echo "Hello Linux"
+history
+clear
+```
+
+---
+
+## 🔐 Day 7: Permissions
+
+### ❓ Tasks
+
+1. Give full permission to file
+2. Read-only for others
+
+### ✅ Answers
+
+```bash
+chmod 777 file.txt
+chmod 744 file.txt
+```
+
+---
+
+## 👤 Day 8: Ownership
+
+### ❓ Tasks
+
+1. Change owner
+2. Change group
+
+### ✅ Answers
+
+```bash
+chown user file.txt
+chown user:group file.txt
+```
+
+---
+
+## 🧠 Day 9: Processes
+
+### ❓ Tasks
+
+1. View processes
+2. Kill process by ID
+
+### ✅ Answers
+
+```bash
+ps aux
+kill -9 1234
+```
+
+---
+
+## 💾 Day 10: Disk Usage
+
+### ❓ Tasks
+
+1. Check disk space
+2. Check folder size
+
+### ✅ Answers
+
+```bash
+df -h
+du -sh folder/
+```
+
+---
+
+## 🔍 Day 11: Search
+
+### ❓ Tasks
+
+1. Find file
+2. Search word in file
+
+### ✅ Answers
+
+```bash
+find / -name test.txt
+grep "hello" file.txt
+```
+
+---
+
+## 📦 Day 12: Compression
+
+### ❓ Tasks
+
+1. Create tar file
+2. Extract tar file
+
+### ✅ Answers
+
+```bash
+tar -cvf backup.tar folder/
+tar -xvf backup.tar
+```
+
+---
+
+## 🧾 Day 13: Script Basics
+
+### ❓ Task
+
+Create script to print message
+
+### ✅ Answer
+
+```bash
+#!/bin/bash
+echo "Welcome to Linux"
+```
+
+---
+
+## 🔁 Day 14: Loops
+
+### ❓ Task
+
+Print numbers 1–5
+
+### ✅ Answer
+
+```bash
+for i in {1..5}
+do
+  echo $i
+done
+```
+
+---
+
+## ❓ Day 15: Conditions
+
+### ❓ Task
+
+Check if file exists
+
+### ✅ Answer
+
+```bash
+if [ -f file.txt ]
+then
+  echo "File exists"
+fi
+```
+
+---
+
+## 🌐 Day 16: Networking
+
+### ❓ Tasks
+
+1. Ping Google
+2. Get IP address
+
+### ✅ Answers
+
+```bash
+ping google.com
+ip a
+```
+
+---
+
+## 🔗 Day 17: SSH
+
+### ❓ Task
+
+Connect to server
+
+### ✅ Answer
+
+```bash
+ssh user@ip
+```
+
+---
+
+## 👥 Day 18: Users
+
+### ❓ Tasks
+
+1. Create user
+2. Set password
+
+### ✅ Answers
+
+```bash
+useradd devuser
+passwd devuser
+```
+
+---
+
+## 📥 Day 19: Package Install
+
+(Using Ubuntu)
+
+### ❓ Tasks
+
+1. Update packages
+2. Install nginx
+
+### ✅ Answers
+
+```bash
+apt update
+apt install nginx
+```
+
+---
+
+## 🔄 Day 20: Services
+
+### ❓ Tasks
+
+1. Start service
+2. Check status
+
+### ✅ Answers
+
+```bash
+systemctl start nginx
+systemctl status nginx
+```
+
+---
+
+## 📜 Day 21: Logs
+
+### ❓ Tasks
+
+1. View logs
+2. Check system logs
+
+### ✅ Answers
+
+```bash
+journalctl
+cat /var/log/syslog
+```
+
+---
+
+## ⏰ Day 22: Cron Jobs
+
+### ❓ Task
+
+Open cron editor
+
+### ✅ Answer
+
+```bash
+crontab -e
+```
+
+---
+
+## 🎯 Final Practice (Days 23–30)
+
+Try combining everything:
+
+### ❓ Tasks
+
+* Create backup script
+* Schedule it using cron
+* Install & run Nginx
+* Create user & assign permissions
+
+---
+
