@@ -41,4 +41,12 @@ In Linux we have different types of commands
 Note:By default we are in EC2-user, But if we want to perform any action we should be in root user because,root is the ultimate king of linux, root has
   fully permissions, so that we can run any command anywhere.
 
+ VIM editor?
+ It is used to edit the file in linux machines,It has 3 modes
+1.command mode
+2.Insert mode
+3.save& quit mode
+To open any file in vim editor : vim filename or vi filename
+
+command mode:-- Tghis is the default mode in vim editor,It is used to perform some actions like used ro copy the data,delete the data and we can make undo,redo the changes as well.
 
