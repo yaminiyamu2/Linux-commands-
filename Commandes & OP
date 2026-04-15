@@ -94,8 +94,24 @@ cat > filename : used to overwritte the data(Replace)
 cat >> filename : usd to append the data(old+new data)
 cat -n file name : used to numbering the data
 
+****VIM EDITOR****
 
+command mode:-------
 
+yy : used to copy the line
+number+yy : used to copy number of lines from our cursor ex:5+yy
+p : paste the coppied content
+number+p : paste the copied content number of times ex: 5+p
+dd : used to delete the line
+number+dd : used to delete number of lines from the cursor ex:5+dd
+gg : used to go to 1st line of the file
+number+gg : used to go to that number line of the file
+G : used to go to last line of the file
+M : used to go to middle of the file
+u : used to undo the changes
+ctrl+r : used to redo the chnages
+/ or ? (word) : used to search for a word in a file ex: /mongodbs or ?mongodbs
+%s/old/new/g : used to replace (s-string ; old-existing word ; new- replace word ; g- global) ex:%s/mongobds/linux/g
 
 
 
