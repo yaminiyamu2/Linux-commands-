@@ -6,6 +6,10 @@ rm   = Remove
 -rf  = Recusrive forcefully 
 -    = regular file 
 mkdir= making directory
+-r   = Reverse
+-t   = Time
+-a   = any file(hidden file)
+Ctrl+D = save
 
 ****SYSTEM COMMANDS****
 
@@ -24,7 +28,6 @@ timedatectl : used to get timezone
 hostname : Used to get private dns name ofour system ex:ip-172-31-24-62.eu-north-1.computer.in
 hostname -i : used to get private ip of our system ex: 176.31.24.62
 hostnamectl set-hostname "hacchi" :used to change host name 
-Ctrl+D : exit
 ip addr :used to get private IP
 ip route : used to get private IP
 ifconfig : used to get private IP
@@ -42,8 +45,6 @@ lsblk :list of block device
 ****FILE COMMAND****
 
 touch filename : used to create a file
-ll : list of files (long list),it's comes from the alphbatical order ex: -rw-r--r--, 1 root root 0 JUL 17 13:53 devops (-rw-r--r-- =permitions, 1 root root = owners, 0 jul 13:53 = time, devops = file name)
-ls : shoet list ex: devops ( filename)
 touch filename1 filename2 filename3 : used to multiple cammands ex: touch linux jenkins git
 touch filename {n..n+1} : this file create based on the give numbers we need to give muststood the two dots in between requested numbers ex: touch git {1..3} op/ git1 git2 git3
 rm filename : remove file with permission ex: rm filename1 filename2 op/ rm:remove regular empty file 'filename1'? Y(we need to give 'y')
@@ -64,6 +65,35 @@ rmdir foldername1 foldername2 : used to remove multiple empty folder
 rmdir foldername{n..n+1} : used to remove a n+1 folders at a time
 rmdir * : used to remove all empty folder
 rmdir -rf * : used to remove all files & folder and also it is used to remove Non-empty foldes
+
+****LIST OF FILES****
+
+ll : list of files (long list),it's comes from the alphbatical order ex: -rw-r--r--, 1 root root 0 JUL 17 13:53 devops (-rw-r--r-- =permitions, 1 root root = owners, 0 jul 13:53 = time, devops = file name)
+ls : shoet list ex: devops ( filename)
+LS->It will give only file/fo;der names  ;  LL->will give the full infoo about files/folder
+ll -t : Will gives the files based on time
+ll -r : will gives the files on reverse order
+ll -a : used to show hidden files
+
+****CHANGE DIRECTORY****
+
+cd foldername : used to change directory
+cd : used to gog to root directory
+cd - : used to go to previous folder
+cd ../ : used to go to one folder back
+cd ../../ :used to go to 2 folder
+
+****DIRECTORY COMMAND****
+
+mkdir folder1/folder2 : This will create folder2 inside folder1
+ll folder1 : used to get list of files & folder which are present in folder1
+touch folder1/filename : used to create file inside a folder ex:touch folder1/linux 
+mkdir -p folder1/folder2/folder3 : used to create parenting folder( folder inside the folder)automatically ex: mkdir -p jenkins/git/mongodbs 
+cat : used to read the data from a file ex: cat jenkin op/ enter the data and press ctrl+D
+cat > filename : used to overwritte the data(Replace)
+cat >> filename : usd to append the data(old+new data)
+cat -n file name : used to numbering the data
+
 
 
 
