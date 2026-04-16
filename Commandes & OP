@@ -186,8 +186,16 @@ id username : check how many group that user is there
 groupdel groupname : to delete a group 
 getent group (or) cat/etc/group : to see the list of group
 
+****OWNER COMMANDS****
 
-
+chown username filename : to change the username (chown = change owner ) ex: chown mangodbs git
+chgrp group filename: to change the group (chgrp = change group) ex: chgrp mangdbs aws
+chown user:group filename : used to change at a time for user and group in the file
+chown user:group * : change all files user and group names
+chown use:group foldername : It is only change the folder user and group
+chown user:group folder -R : It is change the folder and insider the file user and group also chnage
+chown user:group folder/* : It is only chanage the files inside the folder data
+chown user:group folder/filename : to change a specific file ex: chown devops:aws flm/jenkins
 
 
 
