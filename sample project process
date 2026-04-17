@@ -1,0 +1,264 @@
+Good instinct—just “learning Linux” won’t impress recruiters much, but a **hands-on project with clear steps + proof** will.
+
+Here’s a **simple but powerful Linux resume project** you can actually finish and show:
+
+---
+
+# 🚀 Project: Linux Server Setup & Automation (Beginner → Job-ready)
+
+## 🎯 What this project shows
+
+* Linux commands (real usage, not theory)
+* User & permission management
+* Package installation
+* Bash scripting
+* Basic DevOps mindset
+
+---
+
+# 🧩 Step-by-Step Project Plan
+
+## 🔹 Step 1: Set up Linux environment
+
+Install:
+
+* Ubuntu (VM using VirtualBox) OR
+* Windows Subsystem for Linux
+
+Commands to verify:
+
+```bash
+uname -a
+ls
+pwd
+```
+
+---
+
+## 🔹 Step 2: Create a project folder
+
+```bash
+mkdir linux-project
+cd linux-project
+```
+
+---
+
+## 🔹 Step 3: User & Permission Management
+
+Create a new user:
+
+```bash
+sudo adduser devuser
+```
+
+Give sudo access:
+
+```bash
+sudo usermod -aG sudo devuser
+```
+
+Switch user:
+
+```bash
+su - devuser
+```
+
+👉 Practice:
+
+```bash
+whoami
+groups
+```
+
+---
+
+## 🔹 Step 4: Install & Manage Services
+
+Install Apache:
+
+```bash
+sudo apt update
+sudo apt install apache2 -y
+```
+
+Check service:
+
+```bash
+systemctl status apache2
+```
+
+Enable at boot:
+
+```bash
+sudo systemctl enable apache2
+```
+
+Test:
+
+* Open browser → `http://localhost`
+
+---
+
+## 🔹 Step 5: Create a Simple Website
+
+```bash
+cd /var/www/html
+sudo nano index.html
+```
+
+Add:
+
+```html
+<h1>Hello from Linux Server 🚀</h1>
+```
+
+---
+
+## 🔹 Step 6: File Permissions Practice
+
+```bash
+ls -l
+sudo chmod 755 index.html
+sudo chown devuser:devuser index.html
+```
+
+---
+
+## 🔹 Step 7: Write a Bash Automation Script
+
+Create script:
+
+```bash
+nano setup.sh
+```
+
+Add:
+
+```bash
+#!/bin/bash
+
+echo "Updating system..."
+sudo apt update
+
+echo "Installing Apache..."
+sudo apt install apache2 -y
+
+echo "Starting Apache..."
+sudo systemctl start apache2
+
+echo "Done!"
+```
+
+Make executable:
+
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+---
+
+## 🔹 Step 8: Log Monitoring
+
+```bash
+cd /var/log
+ls
+tail -f syslog
+```
+
+Apache logs:
+
+```bash
+cd /var/log/apache2
+```
+
+---
+
+## 🔹 Step 9: Disk & Process Monitoring
+
+```bash
+df -h
+top
+ps aux
+```
+
+Kill process:
+
+```bash
+kill -9 <PID>
+```
+
+---
+
+## 🔹 Step 10: Backup Script (Important for Resume ⭐)
+
+```bash
+nano backup.sh
+```
+
+```bash
+#!/bin/bash
+
+tar -czvf backup.tar.gz /var/www/html
+echo "Backup completed"
+```
+
+---
+
+# 📂 Final Project Structure
+
+```
+linux-project/
+│── setup.sh
+│── backup.sh
+│── README.md
+```
+
+---
+
+# 📝 Add This to Your Resume
+
+**Project Title:**
+
+> Linux Server Setup & Automation
+
+**Description:**
+
+* Configured Linux server using Ubuntu
+* Managed users, permissions, and services
+* Deployed Apache web server
+* Created automation scripts using Bash
+* Implemented backup and log monitoring
+
+---
+
+# 🔥 Bonus (to stand out)
+
+If you want extra impact:
+
+* Push code to GitHub
+* Add screenshots
+* Record a demo video
+* Add cron job:
+
+```bash
+crontab -e
+```
+
+---
+
+# 💡 Pro Tip (important)
+
+Don’t just copy commands—**understand WHY each step matters**. In interviews, they’ll ask:
+
+* What is `chmod 755`?
+* Difference between `systemctl start` vs `enable`?
+* What is a process?
+
+---
+
+If you want, I can next:
+✅ Convert this into a **30-day daily practice plan**
+✅ Give **interview questions from this project**
+✅ Help you build a **DevOps-level Linux project (advanced)**
